@@ -1,8 +1,16 @@
 /*GLobal*/
 * {
-    background-color: #FAAE85;
     font-size: 16px;
-    font-family: "Proxima Light", Arial, sans-serif;
-    
+    font-family: "Proxima Light", Arial, sans-serif;  
 }
-/*Title Banner*/
+
+main {
+    background-color:#FAAE85;
+}
+
+
+/*Header and Footer*/
+header, footer {
+    display: flex;
+    background-color: #BAA091;
+}
