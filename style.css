@@ -3,6 +3,7 @@ html {
     background-color: #fbfef9;
    margin: 0;
    font-size: 16px;
+   color: #071013;
 }
 
 .full {
@@ -43,19 +44,42 @@ nav ul {
 
 #anchor-item {
     padding-left: 2rem;
+    
 }
 
 #anchor-link {
     text-decoration: none;
     font-family: "mae-variable", sans-serif;
     font-weight: 100;
-    font-size: 1.5rem;
-  
-   
+    font-size: 1.5rem; 
+    position: relative;
+    overflow: hidden; 
+    transition: color 500ms; 
+}
 
+#anchor-link:hover {
+    color:#e71d36;
    
-    
+}
 
+/* Underline Effect */
+#anchor-link::before {
+    transition: 500ms;
+    height: 0.1rem;
+    content: "";
+    position: absolute;
+    background-color: #e71d36;
+    width: 0%;
+    opacity: 0;
+    top: 1.8rem;
+
+}
+
+#anchor-link:hover::before {
+    width: 100%;
+    opacity: 1;
     
 }
+
+
 
