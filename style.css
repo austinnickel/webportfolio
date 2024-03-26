@@ -81,5 +81,15 @@ nav ul {
     
 }
 
+/* Banner */
+#banner-container {
+    background-image: url(./WP_resources/Banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+
+}
+
 
 
