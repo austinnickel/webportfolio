@@ -83,11 +83,12 @@ nav ul {
 
 /* Banner */
 #banner-container {
-    background-image: url(./WP_resources/Banner.png);
+    background-image: url(./WP_resources/Web\ Banner.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40rem;
+    height: 31.25rem;
+    
 
 }
 
