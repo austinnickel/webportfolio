@@ -88,8 +88,13 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     height: 31.25rem;
-    
+}
 
+h1,
+#contact-cta {
+    position: relative;
+    left: 9%;
+    top: 25%;
 }
 
 
