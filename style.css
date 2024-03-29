@@ -23,6 +23,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    height: 5rem;
 }
 
 #logo {
@@ -54,7 +55,8 @@ nav ul {
     font-size: 1.5rem; 
     position: relative;
     overflow: hidden; 
-    transition: color 300ms; 
+    transition: color 300ms;
+    color:#071013; 
 }
 
 #anchor-link:hover {
@@ -88,20 +90,24 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     height: 31.25rem;
-}
-
-.text-container,
-#contact-cta {
-    position: relative;
-    left: 9%;
-    top: 10%;
+    overflow: hidden;
+    
 }
 
 .text-container {
-    display: flex;
+    position: relative;
+    left: 9%;
+    top: 25%;
+    
+}
+
+.text-container {
+   
     width: 40%;
-    height: auto;
-    flex-wrap: wrap;
+    height: 45%;
+    overflow:hidden;
+   
+   
 
 }
 
@@ -120,4 +126,26 @@ h1 {
 #graphic-font {
     font-family: "acier-bat-gris", sans-serif;
     font-size: 3.5rem;
+}
+
+#contact-cta {
+    position: relative;
+    left: 9%;
+    top: 32%;
+    font-size: 2rem;
+    font-family: "mae-variable", sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    border: .1rem solid #071013;
+    padding: .8rem 1.2rem;
+    border-radius: 20px;
+    color:#071013;
+    transition: 300ms;
+    
+   
+}
+
+#contact-cta:hover {
+    color:#fbfef9;
+    background-color:#071013;
 }
