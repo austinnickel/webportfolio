@@ -3,6 +3,7 @@ main, html {
     background-color: #fbfef9;
    margin: 0;
    padding: 0;
+   font-family: "mae-variable", sans-serif;
    font-size: 16px;
    height: 100%;
    color: #071013;
@@ -56,13 +57,12 @@ nav ul {
     transition: color 300ms;
     color:#071013; 
     text-decoration: none;
-    font-family: "mae-variable", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+   
 }
 
-#anchor-link {
-   font-weight: 100;
-    font-size: 1.5rem;   
-}
+
 
 .link-underline:hover {
     color:#e71d36;
@@ -107,13 +107,9 @@ nav ul {
 }
 
 .text-container {
-   
     width: 40%;
     height: 70%;
-    overflow:hidden;
-   
-   
-
+    overflow:hidden; 
 }
 
 
@@ -138,7 +134,7 @@ h1 {
     left: 9%;
     top: 10%;
     font-size: 2rem;
-    font-family: "mae-variable", sans-serif;
+    
     font-weight: 200;
     text-decoration: none;
     border: .1rem solid #071013;
@@ -213,7 +209,7 @@ figcaption {
   /*Contact Banner*/
 
   #contact-banner {
-    padding: 10rem 0;
+    padding: 10rem 0 5rem 0;
   }
 
   h2 {
@@ -222,7 +218,50 @@ figcaption {
     font-size: 3.5rem;
   }
 
-  h3
+  h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #link-underline-reverse {
+    position: relative;
+    overflow: hidden; 
+    transition: color 300ms;
+    color:#343434; 
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 2rem;  
+}
+
+#link-underline-reverse:hover {
+    color:#071013;
+    font-weight: bold;
+   
+}
+
+/* Underline Effect */
+#link-underline-reverse::before {
+    transition: 300ms;
+    height: 0.1rem;
+    content: "";
+    position: absolute;
+    background-color: #343434;
+    width: 100%;
+    opacity: 1;
+    top: 2.3rem;
+
+}
+
+#link-underline-reverse:hover::before {
+    width: 0%;
+    opacity: 0;
+    
+}
+
+footer {
+    padding-bottom: 5rem;
+}
+
 
 
 
