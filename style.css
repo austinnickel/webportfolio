@@ -130,7 +130,7 @@ h1 {
 
 #graphic-font {
     font-family: "acier-bat-gris", sans-serif;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 #contact-cta {
@@ -208,6 +208,8 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  /*Footer*/
+
   /*Contact Banner*/
 
   #contact-banner {
@@ -217,5 +219,12 @@ figcaption {
   h2 {
     font-family: "ysans-std", sans-serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
+
+  h3
+
+
+
+ 
+
