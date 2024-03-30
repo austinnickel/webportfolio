@@ -102,14 +102,14 @@ nav ul {
 .text-container {
     position: relative;
     left: 9%;
-    top: 25%;
+    
     
 }
 
 .text-container {
    
     width: 40%;
-    height: 45%;
+    height: 70%;
     overflow:hidden;
    
    
@@ -121,7 +121,7 @@ nav ul {
 h1 {
     font-family: "ysans-std", sans-serif;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #digital-font {
@@ -136,7 +136,7 @@ h1 {
 #contact-cta {
     position: relative;
     left: 9%;
-    top: 32%;
+    top: 10%;
     font-size: 2rem;
     font-family: "mae-variable", sans-serif;
     font-weight: 200;
@@ -162,6 +162,7 @@ h1 {
     height: auto;
     display: flex;
     justify-content: space-between;
+    margin: 4rem 0;
 }
 
 figure {
@@ -205,4 +206,16 @@ figcaption {
     height: 100%;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /*Contact Banner*/
+
+  #contact-banner {
+    padding: 10rem 0;
+  }
+
+  h2 {
+    font-family: "ysans-std", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
   }
