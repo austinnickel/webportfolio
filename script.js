@@ -1,4 +1,4 @@
-const fullScreenImages = document.querySelectorAll('fullscreen-image');
+const fullScreenImages = document.querySelectorAll('.fullscreen-image');
 
 fullScreenImages.forEach(image => {
     image.addEventListener('click', () => {
