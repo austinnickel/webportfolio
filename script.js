@@ -5,7 +5,7 @@ fullScreenImages.forEach(image => {
         if (!document.fullscreenElement) {
             image.classList.add('fullscreen');
             image.requestFullscreen().catch(err => {
-                alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`
+                alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name}`)
             });
         } else {
             if (document.exitFullscreen) {
