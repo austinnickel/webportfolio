@@ -271,6 +271,16 @@ footer {
     gap: 1rem;
 }
 
+.social-link {
+    color:#071013;
+    opacity: .7;
+    transition: all 200ms;
+}
+
+.social-link:hover {
+    opacity: 1;
+}
+
 #copywrite p {
     font-size: 1.5rem;
     padding-left: .85rem;
