@@ -130,26 +130,29 @@ h1 {
 }
 
 #contact-cta {
-    position: relative;
+    position: absolute;
     left: 9%;
-    top: 10%;
+    top: 60%;
     font-size: 2rem;
-    
     font-weight: 200;
-    text-decoration: none;
-    border: .1rem solid #071013;
+    border: .1rem #fbfef9 #071013;
     padding: .8rem 1.2rem;
     border-radius: 20px;
+    text-decoration: none;
     color:#071013;
-    transition: 300ms;
-    
-   
+    background: linear-gradient(to right, #071013 0%, #071013 50%, transparent 50%, transparent 100%);
+    background-size:200% 100%;
+    background-position: 100% 0;
+    background-repeat:no-repeat;
+    transition: 0.3s ease-out;     
 }
 
 #contact-cta:hover {
+    background-position:0 0;
     color:#fbfef9;
-    background-color:#071013;
+    
 }
+
 
 /* Gallery */
 
