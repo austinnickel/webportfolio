@@ -19,6 +19,59 @@ main, html {
    
    
 }
+
+/*Reveal Animation*/
+.reveal-container-cta {
+    overflow:hidden;
+    position: absolute;
+    left: 9%;
+    top: 60%;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.text-reveal-vert {
+    transform: translate(0, 200%);
+    
+    animation: slideUp 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translate(0, 200%);
+       
+        
+    }
+
+    100% {
+        transform: translate(0, 0);
+        
+        
+    }
+}
+
+.text-reveal-hor {
+    transform: translate(-150%, 0);
+    
+    animation: slideRight 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translate(-150%, 0);
+       
+        
+    }
+
+    100% {
+        transform: translate(0, 0);
+        
+        
+    }
+}
 /*Header*/
 
 #header-container {
@@ -27,6 +80,7 @@ main, html {
     align-items: center;
     padding: 20px 0;
     height: 5rem;
+    overflow:hidden;
 }
 
 #logo {
@@ -34,6 +88,7 @@ main, html {
     font-weight: 200;
     color: #e71d36;
     font-size: 2.5rem;
+   
 }
 
 /* Nav Links */
@@ -95,21 +150,18 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     height: 31.25rem;
-    overflow: hidden;
+   
     
 }
 
 .text-container {
     position: relative;
     left: 9%;
-    
-    
-}
-
-.text-container {
     width: 40%;
     height: 70%;
-    overflow:hidden; 
+    overflow: hidden;
+    
+    
 }
 
 
@@ -118,6 +170,7 @@ h1 {
     font-family: "ysans-std", sans-serif;
     font-weight: 300;
     font-size: 4rem;
+   
 }
 
 #digital-font {
@@ -130,9 +183,7 @@ h1 {
 }
 
 #contact-cta {
-    position: absolute;
-    left: 9%;
-    top: 60%;
+
     font-size: 2rem;
     font-weight: 200;
     border: .1rem #fbfef9 #071013;
@@ -144,7 +195,8 @@ h1 {
     background-size:200% 100%;
     background-position: 100% 0;
     background-repeat:no-repeat;
-    transition: 0.3s ease-out;     
+    transition: 0.3s ease-out;
+         
 }
 
 #contact-cta:hover {
@@ -183,10 +235,14 @@ figure img:hover {
 }
 
 figcaption {
-    text-align: center;
     margin-top: 1rem;
     padding: .5rem;
     font-size: 1.5rem;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    height: 2em;
+   
 }
 
 /* Fullscreen image click*/
@@ -213,17 +269,20 @@ figcaption {
 
   #contact-banner {
     padding: 10rem 0 5rem 0;
+    overflow: hidden;
   }
 
   h2 {
     font-family: "ysans-std", sans-serif;
     font-weight: 400;
     font-size: 3.5rem;
+  
   }
 
   h3 {
     font-size: 2rem;
     font-weight: 200;
+    
   }
 
   #link-underline-reverse {
@@ -265,8 +324,10 @@ footer {
     display: flex;
     padding-bottom: 5rem;
     gap:25rem;
+  
    
 }
+
 
 .flex-column {
     display:flex;
