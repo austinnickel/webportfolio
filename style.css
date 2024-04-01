@@ -24,8 +24,8 @@ main, html {
 .reveal-container-cta {
     overflow:hidden;
     position: absolute;
+    top: 80%;
     left: 9%;
-    top: 60%;
     display:flex;
     justify-content:center;
     align-content: center;
@@ -150,6 +150,7 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     height: 31.25rem;
+    margin: 10rem auto;
    
     
 }
@@ -209,24 +210,19 @@ h1 {
 /* Gallery */
 
 #portfolio {
-    width: 100%;
-    height: auto;
     display: flex;
+    height: 50rem;
     justify-content: space-between;
+    align-items: center;
     margin: 4rem 0;
-}
-
-figure {
-    overflow:hidden;
 }
 
 figure img {
     width: 100%;
     height: auto;
     transition: all 500ms ease;
-    filter:grayscale(100%)
-    
-     
+    filter:grayscale(100%);
+        
 }
 
 figure img:hover {
@@ -236,7 +232,7 @@ figure img:hover {
 
 figcaption {
     margin-top: 1rem;
-    padding: .5rem;
+    padding: 1rem;
     font-size: 1.5rem;
     overflow: hidden;
     display:flex;
@@ -268,7 +264,7 @@ figcaption {
   /*Contact Banner*/
 
   #contact-banner {
-    padding: 10rem 0 5rem 0;
+    padding: 7rem 0;
     overflow: hidden;
   }
 
