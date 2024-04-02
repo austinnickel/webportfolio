@@ -27,14 +27,19 @@ document.addEventListener('fullscreenchange', () => {
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.image');
 
-    images.forEach(image => {
-        window.addEventListener('scroll', function() {
+    function checkVisibility() {
+        images.forEach(image => {
             const imageTop = image.getBoundingClientRect().top;
             if (imageTop < window.innerHeight) {
                 image.classList.add('image-animate');
             } else {
-                image.classList.remove('image-animate');
+                image.classList.remove('image.animate');
             }
         });
-    });
+    }
+
+    checkVisibility();
+
+    window.addEventListener('scroll', checkVisibility);
 });
+

@@ -26,7 +26,7 @@ main, html {
 .image-animate {
     transform: translateY(150%);
  
-    animation: slideUp 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    animation: slideUp 1.5s ease-in;
 
 }
 
@@ -187,6 +187,7 @@ h1 {
 .image {
     width: 100%;
     height: auto;
+    transform: translateY(0);
     transition: all 500ms ease;
     filter:grayscale(100%);     
 }
