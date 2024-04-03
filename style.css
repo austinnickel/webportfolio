@@ -147,7 +147,7 @@ h1 {
 /* Gallery */
 
 #portfolio {
-    display: flex;
+    display:flex;
     height: 50rem;
     justify-content: space-between;
     align-items: center;
@@ -308,6 +308,16 @@ footer {
     padding-left: .85rem;
 }
 
+/*mobile*/
+@media screen and (max-width: 480px) {
+    #banner-container {
+        background-color:#fbfef9;
+    }
+    #portfolio {
+        flex-direction: column;
+        height: 70rem;
+    }
+}
 
 
 
