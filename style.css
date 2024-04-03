@@ -20,32 +20,6 @@ main, html {
    
 }
 
-/*Reveal Animation*/
-
-
-.image-animate {
-    transform: translateY(150%);
- 
-    animation: slideUp 1.5s ease-in;
-
-}
-
-@keyframes slideUp {
-    0% {
-        transform: translateY(150%);
-       
-       
-        
-    }
-
-    100% {
-        transform: translateY(0);
-     
-        
-        
-    }
-}
-
 
 /*Header*/
 
@@ -187,10 +161,18 @@ h1 {
 .image {
     width: 100%;
     height: auto;
-    transform: translateY(0);
-    transition: all 500ms ease;
-    filter:grayscale(100%);     
+    transform: translateY(150%);
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    filter:grayscale(100%); 
+       
 }
+
+.visible {
+    transform: translateY(0%);
+    opacity: 1;   
+}
+
 
 .image:hover {
     filter:grayscale(0%);
@@ -239,7 +221,20 @@ figcaption {
     font-family: "ysans-std", sans-serif;
     font-weight: 400;
     font-size: 3.5rem;
-  
+    display:flex;
+    flex-direction: column;
+  }
+    
+  .contact-line {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+
+  .line-reveal {
+    opacity: 1;
+    transform: translateY(0);
+
   }
 
   h3 {

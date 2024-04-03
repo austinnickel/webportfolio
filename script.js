@@ -26,20 +26,52 @@ document.addEventListener('fullscreenchange', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.image');
+    const contactBanner = document.getElementById('contact-banner');
+    const lines = contactBanner.querySelectorAll('.contact-line');
 
     function checkVisibility() {
+        const viewportHeight = window.innerHeight;
+
         images.forEach(image => {
             const imageTop = image.getBoundingClientRect().top;
-            if (imageTop < window.innerHeight) {
-                image.classList.add('image-animate');
+            if (imageTop < viewportHeight) {
+                image.classList.add('visible');
             } else {
-                image.classList.remove('image.animate');
+                image.classList.remove('visible');
             }
         });
     }
 
     checkVisibility();
+    window.addEventListener('scroll', throttle(checkVisibility, 100));
 
-    window.addEventListener('scroll', checkVisibility);
+    function revealOnScroll() {
+        const bounding =contactBanner.getBoundingClientRect();
+        const isVisible = (bounding.top >= 0) && (bounding.bottom <= window.innerHeight);
+
+        if (isVisible) {
+            lines.forEach((line, index) => {
+                line.style.transitionDelay = `${index * 0.1}s`;
+                line.classList.add('line-reveal')
+            });
+            
+            window.removeEventListener('scroll', revealOnScroll);
+
+        }
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
 });
+
+function throttle(func, delay) {
+    let timeoutId;
+    return function() {
+        if (!timeoutId) {
+            timeoutId = setTimeout(() => {
+                func.apply(this, arguments);
+                timeoutId = null;
+            }, delay);
+        }
+    };
+}
 
