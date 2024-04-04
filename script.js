@@ -32,10 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkVisibility() {
         const viewportHeight = window.innerHeight;
 
-        images.forEach(image => {
+        images.forEach((image, index) => {
             const imageTop = image.getBoundingClientRect().top;
-            if (imageTop < viewportHeight) {
+            const imageVisible = imageTop < viewportHeight;
+
+            if (imageVisible) {
+            
                 image.classList.add('visible');
+                
             } else {
                 image.classList.remove('visible');
             }

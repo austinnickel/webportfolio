@@ -15,9 +15,7 @@ main, html {
 
 .wrapper {
     width: 82%;
-    margin: 0 auto
-   
-   
+    margin: 0 auto;   
 }
 
 
@@ -27,7 +25,7 @@ main, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 1.5rem 0;
     height: 5rem;
     overflow:hidden;
 }
@@ -55,15 +53,17 @@ nav ul {
     
 }
 
+#anchor-link {
+    font-size: 1.5rem;
+}
+
 .link-underline {
     position: relative;
     overflow: hidden; 
     transition: color 300ms;
     color:#071013; 
     text-decoration: none;
-    font-weight: 100;
-    font-size: 1.5rem;
-   
+    font-weight: 100; 
 }
 
 
@@ -78,7 +78,7 @@ nav ul {
     transition: 300ms;
     height: 0.1rem;
     content: "";
-    position: absolute;
+    position: relative;
     background-color: #e71d36;
     width: 0%;
     opacity: 0;
@@ -101,14 +101,24 @@ nav ul {
     height: 31.25rem;
     margin: 10rem auto;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    flex-wrap:wrap;   
+}
+
+.text-container {
+    overflow:hidden;
+    height: 20rem;
 }
 
 
 h1 {
     font-family: "ysans-std", sans-serif;
     font-weight: 300;
-    font-size: 4rem;  
+    font-size: 4rem;
+    width: 50%;
+  
+   
+     
 }
 
 #digital-font {
@@ -124,7 +134,7 @@ h1 {
     
     font-size: 2rem;
     font-weight: 200;
-    border: .1rem #fbfef9 #071013;
+    border: .1rem solid #071013;
     padding: .8rem 1.2rem;
     border-radius: 20px;
     text-decoration: none;
@@ -171,7 +181,8 @@ h1 {
 
 .visible {
     transform: translateY(0%);
-    opacity: 1;   
+    opacity: 1; 
+    
 }
 
 
@@ -182,13 +193,16 @@ h1 {
 
 figcaption {
     margin-top: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    overflow: hidden;
     display:flex;
     justify-content: center;
-    height: 2em;
+    align-items: center;
+    height: 2rem;
    
+}
+
+figcaption a {
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Fullscreen image click*/
@@ -313,9 +327,77 @@ footer {
 
 
 @media only screen and (max-width: 480px) {
+
+    #header-container {
+        height: 1rem;
+       
+    }
+
+    .wrapper {
+        width: 92%;
+        
+    }
+
     #banner-container {
         background-image: none;
         background-color:#fbfef9;
+       height: 40rem;
+        margin: 0 auto;   
+    }
+
+    .text-container {
+        height: 30rem;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    #graphic-font {
+        font-size: 4rem;
+    }
+
+    #contact-cta {
+        background-color:#fbfef9;
+        background-position: (0,0)
+    }
+
+    #contact-cta:hover {
+        background-color:#071013;
+    }
+
+    #portfolio {
+        flex-direction:column;
+        height: auto;
+        margin:0;
+    }
+
+    figure {
+        padding-top: 4rem;
+    }
+
+   
+
+    figcaption a {
+        font-size: 1.3rem;
+    
+    }
+
+    #contact-banner {
+        position: relative;
+        padding: 0;
+        top: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 3rem;
     }
 }
 
