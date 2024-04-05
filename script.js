@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
 });
 
-function throttle(func, delay) {
+ function throttle(func, delay) {
     let timeoutId;
     return function() {
         if (!timeoutId) {
@@ -77,5 +77,5 @@ function throttle(func, delay) {
             }, delay);
         }
     };
-}
+} 
 
