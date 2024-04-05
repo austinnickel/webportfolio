@@ -107,7 +107,7 @@ nav ul {
 
 .text-container {
     overflow:hidden;
-    height: 20rem;
+    height: auto;
 }
 
 
@@ -326,7 +326,7 @@ footer {
 /*mobile*/
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 568px) {
 
     #header-container {
         height: 1rem;
@@ -341,17 +341,17 @@ footer {
     #banner-container {
         background-image: none;
         background-color:#fbfef9;
-       height: 40rem;
-        margin: 0 auto;   
+       height: auto;
+        margin: 0 auto; 
     }
 
     .text-container {
-        height: 30rem;
+        height: auto;
     }
 
     h1 {
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     #graphic-font {
@@ -367,11 +367,7 @@ footer {
         background-color:#071013;
     }
 
-    #portfolio {
-        flex-direction:column;
-        height: auto;
-        margin:0;
-    }
+    
 
     figure {
         padding-top: 4rem;
@@ -400,6 +396,147 @@ footer {
         padding-top: 3rem;
     }
 }
+
+@media only screen and (min-width:569px) and (max-width:930px) {
+    #banner-container {
+        background-image: none;
+        background-color:#fbfef9;
+       height: auto;
+        margin: 0 auto; 
+    }
+
+
+    h1 {
+        font-size: 6rem;
+        width:100%;
+        
+    }
+
+    #graphic-font {
+        font-size: 6.5rem;
+    }
+
+    #cta-button a {
+        font-size: 3rem;
+    }
+
+    #contact-banner {
+        padding-top: 0;
+    }
+
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #portfolio {
+        flex-direction:column;
+        height: auto;
+        margin: 10rem 0 0 0;
+    }
+    
+    .image {
+        filter: none;
+    }
+
+    figcaption {
+        height: auto;
+    }
+
+    figcaption a {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+@media only screen and (min-width:931px)  and (max-width: 1024px) {
+    #banner-container {
+        background-image: none;
+        background-color:#fbfef9;
+       height: auto;
+        margin: 0 auto; 
+    }
+
+    h1 {
+        font-size: 6rem;
+        width:100%;
+        
+    }
+
+    #graphic-font {
+        font-size: 6.5rem;
+    }
+
+    #cta-button a {
+        font-size: 3rem;
+    }
+
+    #contact-banner {
+        padding-top: 0;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+    
+    #portfolio {
+        flex-direction:column;
+        height: auto;
+        margin: 10rem 0 0 0;
+    }
+    
+    .image {
+        filter: none;
+    }
+
+    figcaption {
+        height: auto;
+    }
+
+    figcaption a {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1418px) {
+    #banner-container {
+        background-image: none;
+        background-color:#fbfef9;
+       height: auto;
+        margin: 0 auto; 
+    }
+
+
+    h1 {
+        font-size: 6rem;
+        width:100%;
+        
+    }
+
+    #graphic-font {
+        font-size: 6.5rem;
+    }
+
+    #cta-button a {
+        font-size: 3rem;
+    }
+
+    #contact-banner {
+        padding-top: 0;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+}
+
+
+
+
 
 
 
