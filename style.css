@@ -334,7 +334,7 @@ footer {
     }
 
     .wrapper {
-        width: 92%;
+        width: 82%;
         
     }
 
@@ -355,30 +355,42 @@ footer {
     }
 
     #graphic-font {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     #contact-cta {
         background-color:#fbfef9;
-        background-position: (0,0)
+        background: none;
+        font-size: 1.5rem;
     }
 
     #contact-cta:hover {
         background-color:#071013;
     }
 
+    #portfolio {
+        flex-direction:column;
+        height: auto;
+        margin: 2rem 0 0 0;
+    }
     
+    .image {
+        filter: none;
+    }
 
     figure {
         padding-top: 4rem;
     }
 
-   
+    figcaption {
+        height: auto;
+    }
 
     figcaption a {
         font-size: 1.3rem;
-    
     }
+
+    
 
     #contact-banner {
         position: relative;
@@ -407,17 +419,17 @@ footer {
 
 
     h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         width:100%;
         
     }
 
     #graphic-font {
-        font-size: 6.5rem;
+        font-size: 4.5rem;
     }
 
-    #cta-button a {
-        font-size: 3rem;
+    #contact-cta {
+        font-size: 2rem;
     }
 
     #contact-banner {
@@ -447,6 +459,12 @@ footer {
         font-size: 2.5rem;
     }
 
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 3rem;
+    }
+
 
 }
 
@@ -459,17 +477,17 @@ footer {
     }
 
     h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         width:100%;
         
     }
 
     #graphic-font {
-        font-size: 6.5rem;
+        font-size: 4.5rem;
     }
 
-    #cta-button a {
-        font-size: 3rem;
+    #contact-cta {
+        font-size: 2rem;
     }
 
     #contact-banner {
@@ -496,6 +514,10 @@ footer {
 
     figcaption a {
         font-size: 2.5rem;
+    }
+
+    footer {
+        gap:10rem;
     }
 
 }
@@ -531,6 +553,10 @@ footer {
 
     h2 {
         font-size: 5rem;
+    }
+
+    footer {
+        gap:15rem;
     }
 }
 
